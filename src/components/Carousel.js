@@ -16,27 +16,27 @@ class Carousel extends React.Component {
             items: [{
                 id: 0, title: 'Project 0',
                 subTitle: 'Project 0 Details',
-                imgSrc: "tbd",
-                link: `tbd`,
+                imgSrc: omnifood0,
+                link: 'https://www.google.com/',
                 selected: false
             }, {
                 id: 1, title: 'Project 1',
                 subTitle: 'Project 1 Details',
-                imgSrc: `tbd`,
-                link: `tbd`,
+                imgSrc: omnifood0,
+                link: 'https://www.google.com/',
                 selected: false
             }, {
                 id: 2, title: 'Project 2',
                 subTitle: 'Project 2 Details',
-                imgSrc: `tbd`,
-                link: `tbd`,
+                imgSrc: omnifood0,
+                link: 'https://www.google.com/',
                 selected: false
             },
             {
                 id: 3, title: 'Project 3',
                 subTitle: 'Project 2 Details',
-                imgSrc: `tbd`,
-                link: `tbd`,
+                imgSrc: omnifood0,
+                link: 'https://www.google.com/',
                 selected: false
             },
             ]
@@ -44,6 +44,8 @@ class Carousel extends React.Component {
     }
 
     handleCardClick = (id, card) => {
+
+
         let items = [...this.state.items]
 
         //For the particular item that was selected, if its selected is true, set it to false and vice versa
