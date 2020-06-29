@@ -61,17 +61,27 @@ class Carousel extends React.Component {
         })
     }
 
-    makeItems = (items) => {
-        return items.map(item => {
-            return <Card item={item} click={(e) => this.handleCardClick(item.id, e)} key={item.id} />
-        })
+    // *** makeItems was changed to accept a singular item instead of the whole state. render changed a well to make a new row after each 3rd Element. **
+
+    makeItems = (item) => {
+        return <Card item={item} click={(e) => this.handleCardClick(item.id, e)} key={item.id} />
     }
 
     render() {
+        let columns = []
+        this.state.items.forEach((item, idx) => {
+
+            columns.push(
+                this.makeItems(item)
+            )
+            if ((idx + 1) % 3 === 0) { columns.push(<div className="w-100" key={null}></div>) }
+        })
+
+
         return (
             <Container fluid={true}>
                 <Row className="justify-content-around">
-                    {this.makeItems(this.state.items)}
+                    {columns}
                 </Row>
             </Container>
         )
