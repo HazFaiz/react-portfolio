@@ -3,13 +3,15 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavbarBrand from "react-bootstrap/NavbarBrand";
+
 import "./App.css";
 
 import Footer from "./components/Footer"
 import Homepage from "./pages/Homepage"
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
+
+
 
 class App extends React.Component {
   constructor(props) {
