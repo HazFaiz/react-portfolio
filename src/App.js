@@ -4,8 +4,12 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavbarBrand from "react-bootstrap/NavbarBrand";
-
 import "./App.css";
+
+import Footer from "./components/Footer"
+import Homepage from "./pages/Homepage"
+import ContactPage from "./pages/ContactPage";
+import AboutPage from "./pages/AboutPage";
 
 class App extends React.Component {
   constructor(props) {
@@ -39,8 +43,8 @@ class App extends React.Component {
       <Router>
         <Container className="p-0" fluid={true}>
 
+          {/**** Navbar Section *******/}
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-
             <Navbar.Brand >Hazwan Faizul</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse>
@@ -49,12 +53,21 @@ class App extends React.Component {
                 <Link className="nav-link" to="/about">About</Link>
                 <Link className="nav-link" to="/contact">Contact</Link>
               </Nav>
-
             </Navbar.Collapse>
           </Navbar>
 
+          {/**** Routers Section *******/}
+
+          <Route path="/" exact render={() => <Homepage title={this.state.home.title} subtitle={this.state.home.subtitle} subtext={this.state.home.subtext} />} />
+          <Route path="/about" exact render={() => <AboutPage title={this.state.about.title} />} />
+          <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title} />} />
+
+
+          {/**** Footer Section *******/}
+          <Footer />
+
         </Container>
-      </Router>
+      </Router >
     );
   }
 }
