@@ -48,12 +48,13 @@ code {
   margin: 0px;
 }
 
-/* -------- */
+/* -----Flip Card. Refactor later--- */
 
 .flip-card-container {
-  width: 300px;
-  height: 400px;
+  width: 350px;
+  height: 380px;
   perspective: 1000px;
+  margin-bottom: 20px;
 }
 .flip-card {
   position: relative;
@@ -109,6 +110,6 @@ code {
   margin-top: 1.25rem;
 }
 
-.separating-div {
+/* .separating-div {
   height: 50px;
-}
+} */
