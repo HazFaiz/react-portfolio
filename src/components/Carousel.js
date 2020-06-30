@@ -83,3 +83,15 @@ class Carousel extends React.Component {
 }
 
 export default Carousel;
+
+
+{/* <div className="d-inline-block g-card" onClick={e => props.click(props.item)}>
+    <img className="g-card-img" src={props.item.imgSrc} alt={props.item.imgSrc} />
+    {props.item.selected && <CardInfo title={props.item.title} subTitle={props.item.subTitle} link={props.item.link} />}
+</div>
+
+    <animated.div className="g-card-info" style={style}>
+        <p className="g-card-title">{props.title}</p>
+        <p className="g-card-subtitle">{props.subTitle}</p>
+        <p><a href={props.link} target="_blank" rel="noopener noreferrer">Live Site</a> Check the Github</p>
+    </animated.div> */}
