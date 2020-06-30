@@ -39,6 +39,13 @@ class Carousel extends React.Component {
                 link: 'https://www.google.com/',
                 selected: false
             },
+            {
+                id: 3, title: 'Project 3',
+                subTitle: 'Project 2 Details',
+                imgSrc: omnifood0,
+                link: 'https://www.google.com/',
+                selected: false
+            },
 
             ]
         }
@@ -79,12 +86,12 @@ class Carousel extends React.Component {
                 this.makeItems(item)
             )
 
-            if ((idx + 1) % 3 === 0) { columns.push(<div className="w-100 separating-div" key={null}></div>) }
+            // if ((idx + 1) % 2 === 0) { columns.push(<div className="w-100 separating-div" key={null}></div>) }
         })
 
         return (
             <Container fluid={true}>
-                <Row className="justify-content-around">
+                <Row className="justify-content-center">
                     {columns}
                 </Row>
             </Container>

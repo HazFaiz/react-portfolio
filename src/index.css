@@ -55,6 +55,7 @@ code {
   height: 380px;
   perspective: 1000px;
   margin-bottom: 20px;
+  margin-right: 10px;
 }
 .flip-card {
   position: relative;
