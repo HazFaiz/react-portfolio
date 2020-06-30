@@ -12,8 +12,10 @@ function Footer(props) {
                     <Col className="p-0" md={3} sm={12}>
                         Hazwan Faizul
                     </Col>
-                    <Col className="p-0 d-flex justify-content-end" md={3} sm={12}>
-                        This site was made with love by Haz
+                    <Col className="p-0 d-flex justify-content-end footer-logo" md={3} sm={12}>
+                        <a href="https://github.com/HazFaiz"
+                        >Made with &hearts; by Haz <ion-icon name="logo-github"></ion-icon
+                        ></a>
                     </Col>
                 </Row>
             </Container>

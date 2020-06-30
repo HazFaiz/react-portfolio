@@ -14,22 +14,26 @@ class Carousel extends React.Component {
         super(props);
         this.state = {
             items: [{
-                id: 0, title: 'Project 0',
-                subTitle: 'Project 0 Details',
+                id: 0, title: 'OmniFood',
+                subTitle: `Static page for the fictional healthy food delivery 'OmniFood'`,
                 imgSrc: omnifood0,
-                link: 'https://www.google.com/',
+                link: 'https://hazfaiz-omnifood.netlify.app/',
+                github: 'https://github.com/HazFaiz/Omni-Static-Page',
+
                 selected: false
             }, {
                 id: 1, title: 'Project 1',
                 subTitle: 'Project 1 Details',
                 imgSrc: omnifood0,
                 link: 'https://www.google.com/',
+                github: 'https://github.com/HazFaiz/Omni-Static-Page',
                 selected: false
             }, {
                 id: 2, title: 'Project 2',
                 subTitle: 'Project 2 Details',
                 imgSrc: omnifood0,
                 link: 'https://www.google.com/',
+                github: 'https://github.com/HazFaiz/Omni-Static-Page',
                 selected: false
             },
             {
@@ -37,6 +41,7 @@ class Carousel extends React.Component {
                 subTitle: 'Project 2 Details',
                 imgSrc: omnifood0,
                 link: 'https://www.google.com/',
+                github: 'https://github.com/HazFaiz/Omni-Static-Page',
                 selected: false
             },
             {
@@ -44,6 +49,7 @@ class Carousel extends React.Component {
                 subTitle: 'Project 2 Details',
                 imgSrc: omnifood0,
                 link: 'https://www.google.com/',
+                github: 'https://github.com/HazFaiz/Omni-Static-Page',
                 selected: false
             },
 

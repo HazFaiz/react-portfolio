@@ -16,7 +16,10 @@ function Card(props) {
                         <div className="g-card-info">
                             <p className="g-card-title">{props.item.title}</p>
                             <p className="g-card-subtitle">{props.item.subTitle}</p>
-                            <p><a href={props.item.link} target="_blank" rel="noopener noreferrer">Live Site</a> Check the Github</p>
+                            <p>
+                                <a href={props.item.link} target="_blank" rel="noopener noreferrer">Live</a>
+                                <a href={props.item.github}><ion-icon name="logo-github" class="icon-big"></ion-icon></a>
+                            </p>
                         </div>
                     </div>
                 </div>
