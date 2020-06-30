@@ -39,6 +39,7 @@ class Carousel extends React.Component {
                 link: 'https://www.google.com/',
                 selected: false
             },
+
             ]
         }
     }
@@ -63,17 +64,28 @@ class Carousel extends React.Component {
         })
     }
 
-    makeItems = (items) => {
-        return items.map(item => {
-            return <Card item={item} click={(e) => this.handleCardClick(item.id, e)} key={item.id} />
-        })
+    makeItems = (item) => {
+
+        return <Card item={item} click={(e) => this.handleCardClick(item.id, e)} key={item.id} />
+
     }
 
     render() {
+
+        let columns = []
+
+        this.state.items.forEach((item, idx) => {
+            columns.push(
+                this.makeItems(item)
+            )
+
+            if ((idx + 1) % 3 === 0) { columns.push(<div className="w-100 separating-div" key={null}></div>) }
+        })
+
         return (
             <Container fluid={true}>
                 <Row className="justify-content-around">
-                    {this.makeItems(this.state.items)}
+                    {columns}
                 </Row>
             </Container>
         )
@@ -83,6 +95,31 @@ class Carousel extends React.Component {
 }
 
 export default Carousel;
+
+
+
+
+// render() {
+//     let columns = []
+//     this.state.items.forEach((item, idx) => {
+
+//         columns.push(
+//             this.makeItems(item)
+//         )
+//         if ((idx + 1) % 3 === 0) { columns.push(<div className="w-100" key={null}></div>) }
+//     })
+
+
+//     return (
+//         <Container fluid={true}>
+//             <Row className="justify-content-around">
+//                 {columns}
+//             </Row>
+//         </Container>
+//     )
+// }
+
+
 
 
 {/* <div className="d-inline-block g-card" onClick={e => props.click(props.item)}>
