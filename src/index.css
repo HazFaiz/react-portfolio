@@ -18,9 +18,22 @@ code {
   box-sizing: border-box;
 }
 
-.g-card {
-  margin: 20px;
+html,
+body {
+  height: 100%;
 }
+
+/* .content {
+  height: 100%;
+}
+
+.footer {
+  margin-top: 15%;
+} */
+
+/* .g-card {
+  margin: 20px;
+} */
 
 .g-card-img {
   border-radius: 10px;
@@ -51,11 +64,13 @@ code {
 /* -----Flip Card. Refactor later--- */
 
 .flip-card-container {
-  width: 350px;
-  height: 380px;
+  width: 410px;
+  height: 440px;
+
   perspective: 1000px;
   margin-bottom: 40px;
-  margin-right: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .flip-card {
   position: relative;
@@ -140,4 +155,13 @@ code {
 .footer-logo a:link,
 .footer-logo a:visited {
   text-decoration: none;
+}
+
+.success-msg {
+  color: #57a773;
+  padding: 10px 15px;
+}
+.err-msg {
+  color: #ee6352;
+  padding: 10px 15px;
 }

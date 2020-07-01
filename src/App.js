@@ -43,7 +43,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Container className="p-0" fluid={true}>
+        <Container className="p-0 content" fluid={true}>
 
           {/**** Navbar Section *******/}
           <Navbar className="border-bottom" bg="transparent" expand="lg">
