@@ -38,7 +38,7 @@ class ContactPage extends React.Component {
             // emailSent: true
         })
 
-        axios.post('http://localhost:3030/api/email', this.state)
+        axios.post('https://haz-nodemailer.herokuapp.com/api/email', this.state)
             .then(res => {
                 if (res.data.success) {
                     this.setState({
@@ -89,6 +89,8 @@ class ContactPage extends React.Component {
 
 
                     </Form>
+
+
                 </Content>
 
 

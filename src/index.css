@@ -65,7 +65,7 @@ body {
 
 .flip-card-container {
   width: 470px;
-  height: 320px;
+  height: 300px;
 
   perspective: 1000px;
   margin-bottom: 40px;
@@ -101,7 +101,14 @@ body {
   background-color: #2980b9;
 }
 .flip-card-back {
-  background: rgb(53, 52, 52);
+  /* background: rgb(53, 52, 52); */
+  background: linear-gradient(
+    45deg,
+    #ffcc5c 20%,
+    #3c3c3c 20% 50%,
+    #ff6f69 50% 80%,
+    #96ceb4 80%
+  );
 
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -137,7 +144,9 @@ body {
   /* background: black; */
   /* height: 300px;
   width: 350px; */
-  color: rgb(192, 192, 192);
+  text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black,
+    0 -1px 1px black;
+  color: rgb(255, 255, 255);
   padding: 10px;
   line-height: 30px;
   font-weight: 400;
@@ -147,14 +156,28 @@ body {
 .g-card-info p a {
   padding: 0px 20px 0px 20px;
   text-decoration: none;
-  /* color: rgb(50, 54, 252); */
-  font-size: 120%;
-  color: lightblue;
+  display: inline-block;
+
+  font-size: 130%;
+  color: #179deb;
 }
 
 .footer-logo a:link,
 .footer-logo a:visited {
   text-decoration: none;
+  font-size: 160%;
+  color: #eb4a35;
+  display: block;
+  margin: 0 5px;
+}
+
+.footer-logo p {
+  display: block;
+  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
 }
 
 .success-msg {
@@ -164,4 +187,21 @@ body {
 .err-msg {
   color: #ee6352;
   padding: 10px 15px;
+}
+
+#linkedin:hover {
+  color: #007bb5;
+}
+
+#github:hover {
+  color: #000000;
+}
+
+#linkedin,
+#github {
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
 }
