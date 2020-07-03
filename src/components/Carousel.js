@@ -1,6 +1,6 @@
 import React from 'react'
 
-import omnifood0 from "../assets/images/omnifood.png"
+import omnifood0 from "../assets/images/omnifoodv2.JPG"
 import omnifood1 from "../assets/images/omnifood1.png"
 import omnifood2 from "../assets/images/omnifood2.png"
 

@@ -64,8 +64,8 @@ body {
 /* -----Flip Card. Refactor later--- */
 
 .flip-card-container {
-  width: 410px;
-  height: 440px;
+  width: 470px;
+  height: 320px;
 
   perspective: 1000px;
   margin-bottom: 40px;
