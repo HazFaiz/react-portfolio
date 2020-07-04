@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -43,7 +43,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Container className="p-0" fluid={true}>
+        <Container className="p-0 content" fluid={true}>
 
           {/**** Navbar Section *******/}
           <Navbar className="border-bottom" bg="transparent" expand="lg">

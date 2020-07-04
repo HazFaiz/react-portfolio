@@ -18,9 +18,22 @@ code {
   box-sizing: border-box;
 }
 
-.g-card {
-  margin: 20px;
+html,
+body {
+  height: 100%;
 }
+
+/* .content {
+  height: 100%;
+}
+
+.footer {
+  margin-top: 15%;
+} */
+
+/* .g-card {
+  margin: 20px;
+} */
 
 .g-card-img {
   border-radius: 10px;
@@ -51,10 +64,13 @@ code {
 /* -----Flip Card. Refactor later--- */
 
 .flip-card-container {
-  width: 350px;
-  height: 380px;
+  width: 470px;
+  height: 300px;
+
   perspective: 1000px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .flip-card {
   position: relative;
@@ -82,13 +98,23 @@ code {
   /* border-radius: 0.5rem; */
 }
 .flip-card-front {
-  background-color: #333;
-  color: #fff;
+  background-color: #2980b9;
 }
 .flip-card-back {
-  background-color: #34495e;
-  color: #fff;
+  /* background: rgb(53, 52, 52); */
+  background: linear-gradient(
+    45deg,
+    #ffcc5c 20%,
+    #3c3c3c 20% 50%,
+    #ff6f69 50% 80%,
+    #96ceb4 80%
+  );
+
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
 }
 
 .flip-card-front img {
@@ -113,3 +139,69 @@ code {
 /* .separating-div {
   height: 50px;
 } */
+
+.g-card-info p {
+  /* background: black; */
+  /* height: 300px;
+  width: 350px; */
+  text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black,
+    0 -1px 1px black;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.g-card-info p a {
+  padding: 0px 20px 0px 20px;
+  text-decoration: none;
+  display: inline-block;
+
+  font-size: 130%;
+  color: #179deb;
+}
+
+.footer-logo a:link,
+.footer-logo a:visited {
+  text-decoration: none;
+  font-size: 160%;
+  color: #eb4a35;
+  display: block;
+  margin: 0 5px;
+}
+
+.footer-logo p {
+  display: block;
+  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+}
+
+.success-msg {
+  color: #57a773;
+  padding: 10px 15px;
+}
+.err-msg {
+  color: #ee6352;
+  padding: 10px 15px;
+}
+
+#linkedin:hover {
+  color: #007bb5;
+}
+
+#github:hover {
+  color: #000000;
+}
+
+#linkedin,
+#github {
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
