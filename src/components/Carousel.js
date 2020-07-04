@@ -15,7 +15,7 @@ class Carousel extends React.Component {
         this.state = {
             items: [{
                 id: 0, title: 'OmniFood',
-                subTitle: `Static page for the fictional healthy food delivery 'OmniFood'`,
+                subTitle: `Static homepage for the fictional healthy food delivery app 'OmniFood built using vanilla HTML, CSS and Jquery'`,
                 imgSrc: omnifood,
                 link: 'https://hazfaiz-omnifood.netlify.app/',
                 github: 'https://github.com/HazFaiz/Omni-Static-Page',

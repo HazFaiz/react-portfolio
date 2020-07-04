@@ -20,7 +20,8 @@ code {
 
 html,
 body {
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* .content {
@@ -204,4 +205,21 @@ body {
   -moz-transition: color 0.5s;
   -ms-transition: color 0.5s;
   -o-transition: color 0.5s;
+}
+
+.aboutme {
+  width: 100vw;
+  height: 70vh;
+}
+
+.aboutmetext {
+  font-size: 110%;
+}
+.pdfviewer {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  margin: 40px 25% 0 25%;
+  justify-content: center;
+  align-content: center;
 }

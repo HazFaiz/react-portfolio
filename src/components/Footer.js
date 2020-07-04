@@ -10,7 +10,7 @@ function Footer(props) {
             <Container fluid={true}>
                 <Row className="border-top justify-content-between p-3 footer-logo">
                     <Col className="p-0" md={3} sm={12}>
-                        <p>Contact me at haz.faizul@gmail.com</p>
+                        <p>Contact @ haz.faizul@gmail.com</p>
                     </Col>
                     <Col className="p-0 d-flex justify-content-end " md={3} sm={12}>
 
