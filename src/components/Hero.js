@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 
-import Button from 'react-bootstrap/Button'
+
 
 
 function Hero(props) {
