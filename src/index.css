@@ -21,7 +21,7 @@ code {
 html,
 body {
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 /* .content {
@@ -214,7 +214,7 @@ body {
 }
 
 .aboutme {
-  width: 100vw;
+  /* width: 100vw; */
   height: 70vh;
 }
 
